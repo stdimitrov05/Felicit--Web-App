@@ -63,5 +63,5 @@
 <script src="./Functions/js/index.js"></script>
 </html>
 <?php }else{
-	header("Location: ./Page/home.php");
+	header("Location: ./Page/index.php");
 } ?>

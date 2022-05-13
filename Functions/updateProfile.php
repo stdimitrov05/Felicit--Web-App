@@ -16,7 +16,7 @@ if(isset($_POST['update_profile'])){
    $confirm_pass = mysqli_real_escape_string($conn, md5($_POST['confirm_pass']));
 
  
-     if($new_pass != $confirm_pass){
+     if(!empty( $new_pass) != !empty( $confirm_pass)){
          $message[] = 'confirm password not matched!';
       }else{
          mysqli_query($conn, "UPDATE `profile` SET password = '$confirm_pass' WHERE id = '$user_id'") or die('query failed');
