@@ -95,7 +95,7 @@ if(isset($_POST['update_profile'])){
             <span>new password :</span>
             <input type="password" name="new_pass" placeholder="enter new password" class="box">
             <span>confirm password :</span>
-            <input type="password" name="confirm_pass" placeholder="confirm new password" class="box">
+            <input type="password" name="confirm_pass" placeholder="confirm new password" class="box" required>
          </div>
       </div>
       <input type="submit" value="update profile" name="update_profile" class="btn">
