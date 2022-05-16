@@ -209,6 +209,10 @@ class dbFunction
 
         return $delete;
     }
+    public function TruncateIpTable(){
+       return   mysqli_query($this->conToDb, "TRUNCATE TABLE ip ");
+        
+    }
     public function DeleteTokenById($id)
     {
         $delete = mysqli_query($this->conToDb, "DELETE FROM status WHERE status. profileId='$id' ");
@@ -216,14 +220,5 @@ class dbFunction
         return $delete;
     }
 
-    //UPDATE FUNCTIONS
-
-    public function UpdateProfileById($id, $name, $adress, $pass, $img, $role)
-    {
-
-        $sql = mysqli_query($this->conToDb, "UPDATE profile set  name='$name',  password='$pass' ,email='$adress', image='$img' role='$role' WHERE id='$id'");
-
-
-        return $sql;
-    }
+  
 }

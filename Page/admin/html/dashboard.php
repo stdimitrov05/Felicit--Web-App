@@ -86,7 +86,7 @@ if (isset($_GET['logout'])) {
                         <li class="nav-small-cap"><span class="hide-menu">Pages</span></li>
                         <li class="sidebar-item">
                             <a class="sidebar-link sidebar-link" href="dashboard.php" aria-expanded="false">
-                                <i data-feather="home" class="feather-icon"></i>
+                                <i data-feather="grid" class="feather-icon"></i>
                                 <span class="hide-menu">Dashboard</span>
                             </a>
                         </li>
@@ -99,7 +99,7 @@ if (isset($_GET['logout'])) {
                         </li>
                         <li class="sidebar-item">
                             <a class="sidebar-link sidebar-link" href="../../../Functions/adminProfile.php" aria-expanded="false">
-                                <i data-feather="grid" ></i>
+                                <i data-feather="grid"  class="feather-icon" ></i>
                                 <span class="hide-menu">Pofile</span>
                             </a>
                         </li>

@@ -88,7 +88,7 @@ $res = $con->SelectAllIp();
                         <li class="nav-small-cap"><span class="hide-menu">Pages</span></li>
                         <li class="sidebar-item">
                             <a class="sidebar-link sidebar-link" href="dashboard.php" aria-expanded="false">
-                                <i data-feather="home" class="feather-icon"></i>
+                                <i data-feather="grid" class="feather-icon"></i>
                                 <span class="hide-menu">Dashboard</span>
                             </a>
                         </li>
@@ -117,6 +117,7 @@ $res = $con->SelectAllIp();
                                 <ol class="breadcrumb m-0 p-0">
                                 <li class="breadcrumb-item"><a href="dashboard.php" class="text-muted">Home</a></li>
                                 <li class="breadcrumb-item"><a href="../sql/ipexport.php" >Export</a></li>
+                                <li class="breadcrumb-item"><a href="../sql/truncate.php" >Reset DB</a></li>
                                 </ol>
                             </nav>
                         </div>
@@ -130,7 +131,8 @@ $res = $con->SelectAllIp();
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Log Table</h4>
+                                <h4 class="card-title">
+System Log</h4>
 
                             </div>
 
@@ -146,7 +148,7 @@ $res = $con->SelectAllIp();
                                                 <th scope="col">Devaice</th>
                                                 <th scope="col">Date</th>
                                                 <th scope="col">Profile Name</th>
-                                                <th scope="col">Delete</th>
+                                            
                                             </tr>
                                         </thead>
                                         <?php
@@ -165,8 +167,7 @@ $res = $con->SelectAllIp();
                                                     <td><?php echo $row["loginAt"]; ?></td>
                                                     <?php $name = $con->SelectNameByID($row['profileId'])?>
                                                     <td><?php echo  $name ?></td>
-                                                    <td><a href="../sql/delete.php?id=<?php echo $row["id"] ?>">Delete <?php echo $row["ipAdress"]; ?></a></td>
-                                                    
+                                                  
 
                                                 </tr>
                                                 <tr>
