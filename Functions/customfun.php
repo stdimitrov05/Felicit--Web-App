@@ -24,4 +24,3 @@ function DeleteToken($confing)
     $delete = $confing->DeleteTokenById($loginID);
     return $delete;
 }
-

@@ -7,5 +7,5 @@ if (!$sql) {
    echo "Error";
 
 }else{
-    header("location:../Page/Staff/home.php");
+    header("location:../Page/Staff/home.php#table");
 }

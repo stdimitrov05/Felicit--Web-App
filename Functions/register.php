@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
     if (!$select) {
         
         if (move_uploaded_file($tempname, $folder)) {
-            $confing->CreateNewProfile($name, $email, $pass, $filename);
+            $confing->CreateNewProfile($name, $email, $pass, $filename );
             header("location: ../index.php");
         } else {
             echo "<script>alert('Registration Not Successful')</script>";

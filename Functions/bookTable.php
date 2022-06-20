@@ -19,11 +19,10 @@ if (isset($_POST['btn'])) {
 
     if ($booktable) {
             
-        echo "<script>alert('Booking/Food for home  Successful')</script>";
-        header("location:../Page/index.php");
+        
+        header("location:../Page/index.php#book?Msg=Booking/Food for home  Successful  ");
        
     } else {
-        echo "<script>alert('Booking Not Successful')</script>";
-        header("location:../Page/index.php");
+        header("location:../Page/index.php#book?Msg=Booking Not Successful");
     }
 }

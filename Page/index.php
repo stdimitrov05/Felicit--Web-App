@@ -1,7 +1,7 @@
 <?php
 include '../sql/dbFunction.php';
 include '../Functions/customfun.php';
-error_reporting();
+error_reporting(0);
 $con = new dbFunction();
 $id = $_SESSION['id'];
 
@@ -19,6 +19,8 @@ if (isset($_GET['logout'])) {
   header('location:../index.php');
 }
 $name  = $_SESSION['name'];
+
+  $currentDate = new DateTime();
 
 setcookie("profile", $name, time() + 3600, '/');
 ?>
@@ -587,6 +589,7 @@ setcookie("profile", $name, time() + 3600, '/');
         <div class="col-md-6">
           <div class="form_container">
             <form action="../Functions/bookTable.php" method="post" enctype="multipart/form-data" id="sign-up-form">
+              <p><?php echo $_GET['Msg']?></p>
               <input type="text" name="name" class="form-control" placeholder="Your Name " value="<?php $con->InsertNameByID($id); ?>" required />
               <input type="phone" name="phone" class="form-control" placeholder="Phone Number" required />
               <select name="book" required class="form-control nice-select wide">
@@ -609,7 +612,7 @@ setcookie("profile", $name, time() + 3600, '/');
                   Food for Home
                 </option>
               </select>
-              <input required name="date" type="time" class="form-control">
+              <input required name="date" type="time"  placeholder = "<?php echo $currentDate->format('H:i:s');?>"class="form-control">
               <input required type="text" name="text" class="form-control" placeholder="More Informashion for booking" />
               <input type="submit" name="btn" value="Booking" class="btn_box">
             </form>

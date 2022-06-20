@@ -8,8 +8,7 @@ if(isset($_POST['update_profile'])){
 
    $update_name = mysqli_real_escape_string($conn, $_POST['update_name']);
    $update_email = mysqli_real_escape_string($conn, $_POST['update_email']);
-
-   mysqli_query($conn, "UPDATE `profile` SET name = '$update_name', email = '$update_email' WHERE id = '$user_id'") or die('query failed');
+   mysqli_query($conn, "UPDATE `profile` SET name = '$update_name', email = '$update_email'   WHERE id = '$user_id'") or die('query failed');
 
    
    $new_pass = mysqli_real_escape_string($conn, md5($_POST['new_pass']));
@@ -87,11 +86,11 @@ if(isset($_POST['update_profile'])){
             <input type="text" name="update_name" value="<?php echo $fetch['name']; ?>" class="box">
             <span>your email :</span>
             <input type="email" name="update_email" value="<?php echo $fetch['email']; ?>" class="box">
+           
             <span>update your pic :</span>
             <input type="file" name="update_image" accept="image/jpg, image/jpeg, image/png" class="box">
          </div>
          <div class="inputBox">
-          
             <span>new password :</span>
             <input type="password" name="new_pass" placeholder="enter new password" class="box">
             <span>confirm password :</span>

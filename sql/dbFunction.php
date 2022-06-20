@@ -54,7 +54,10 @@ class dbFunction
     }
 
 
-
+    public function SelectToken($id )
+   {
+    return mysqli_query($this->conToDb,"SELECT * FROM `status` WHERE id = '$id'");
+   }
 
     //SELECT FUNCTIONS
     public function SelectAllIp()
