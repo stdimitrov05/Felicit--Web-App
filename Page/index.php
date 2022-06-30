@@ -310,7 +310,7 @@ setcookie("profile", $name, time() + 3600, '/');
                     Quatre Formaje
                   </h5>
                   <p>
-                    cheese- feta, mozzarella, parmesan cheese, fontina cheese, basil, roma tomato, minced garlic
+                    cheese- feta, mozzarella, parmesan cheese, fontina cheese, basil, roma tomato 
                   </p>
                   <div class="options">
                     <h6>
@@ -382,7 +382,7 @@ setcookie("profile", $name, time() + 3600, '/');
                     Butter Cookies
                   </h5>
                   <p>
-                    butter, sugar, vanilla & almond extract, egg, salt, milk, chocolate, vanilla almond flavor, pink sprinkles
+                    butter, sugar, vanilla & almond extract, egg, salt, milk, chocolate, vanilla almond flavor
                   </p>
                   <div class="options">
                     <h6>
@@ -454,7 +454,7 @@ setcookie("profile", $name, time() + 3600, '/');
                     Cheese Burger
                   </h5>
                   <p>
-                    onion, black pepper, cheddar cheese, feta cheese, meatball, red onion, tomato, lettuce, tomatoes
+                    onion, black pepper, cheddar cheese, feta cheese, meatball, red onion, tomato, lettuce
                   </p>
                   <div class="options">
                     <h6>
@@ -526,7 +526,7 @@ setcookie("profile", $name, time() + 3600, '/');
                     Berries Pancakes
                   </h5>
                   <p>
-                    egg, buttermilk, butter, frozen mixed berries, maple syrup, vanilla bean, ice cream vanilla
+                    egg, buttermilk, butter, frozen mixed berries, maple syrup, vanilla bean, ice cream vanilla flavour
                   </p>
                   <div class="options">
                     <h6>
@@ -702,9 +702,11 @@ setcookie("profile", $name, time() + 3600, '/');
       </div>
       <div class="footer-info">
         <p>
-          &copy; <span id="displayYear"></span> Stanislav Dimitrov/
-          <a href="https://themewagon.com/" target="_blank">Felicità
-          </a>
+          &copy; <span id="displayYear"></span> Stanislav Dimitrov/Felicita
+       
+       
+       <img src="./images/signature-removebg-preview.png" style="border-radius: 50%;
+            width: 60px;    height: 50px;">
         </p>
       </div>
     </div>
